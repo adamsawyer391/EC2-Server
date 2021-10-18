@@ -3,7 +3,7 @@ var datafile = require('./datafile');
 
 var server = http.createServer(function(req, res){
     if(req.url == '/'){
-        res.setHeader("Content-type", "application/json");
+        res.setHeader("Content-type", "text/html");
         res.setHeader("Access-Control-Allow-Origin", "*");
         res.writeHead(200);
         res.end('You hit the AWS server');
@@ -12,7 +12,6 @@ var server = http.createServer(function(req, res){
         res.setHeader("Content-type", "application/json");
         res.setHeader("Access-Control-Allow-Origin", "*");
         res.writeHead(200);
-        res.statusCode(200);
         res.end(datafile);
     }
     else {
