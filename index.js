@@ -1,5 +1,5 @@
-import http from 'http';
-import datafile from './datafile'
+var http = require('http')
+var datafile = require('./datafile');
 
 var server = http.createServer(function(req, res){
     if(req.url == '/'){
