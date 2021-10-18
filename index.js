@@ -6,7 +6,6 @@ var server = http.createServer(function(req, res){
         res.setHeader("Content-type", "application/json");
         res.setHeader("Access-Control-Allow-Origin", "*");
         res.writeHead(200);
-        res.statusCode(200);
         res.end('You hit the AWS server');
     }
     else if(req.url == '/star-trek'){
