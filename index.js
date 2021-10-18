@@ -3,7 +3,7 @@ var datafile = require('./datafile');
 
 var server = http.createServer(function(req, res){
     if(req.url == '/'){
-        res.setHeader("Content-type", "text/html");
+        res.setHeader("Content-type", "application/json");
         res.setHeader("Access-Control-Allow-Origin", "*");
         res.writeHead(200);
         res.end({
