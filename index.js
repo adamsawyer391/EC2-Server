@@ -14,7 +14,10 @@ var server = http.createServer(function(req, res){
         res.setHeader("Content-type", "application/json");
         res.setHeader("Access-Control-Allow-Origin", "*");
         res.writeHead(200);
-        res.end(datafile);
+        console.log(datafile);
+        let dataObject = datafile;
+        let data = JSON.stringify(dataObject);
+        res.end(data);
     }
     else {
         res.end('Invalid url')
