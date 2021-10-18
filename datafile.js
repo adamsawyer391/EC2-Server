@@ -1,4 +1,4 @@
-export const data = [
+const data = [
     {
         id: 1,
         name: "Harold Cricke",
